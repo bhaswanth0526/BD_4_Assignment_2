@@ -19,6 +19,18 @@ let db;
   });
 })();
 
+app.get("/favicon.png", (req, res)=>{
+  res.send("hellopng");
+});
+
+app.get("/favicon.ico", (req, res)=>{
+  res.send("helloico");
+});
+
+app.get("/", (req, res)=>{
+  res.send("hello");
+});
+
 
 
 async function fetchAllGames(){
